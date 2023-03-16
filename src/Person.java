@@ -2,7 +2,7 @@ class Person {
     protected String name;
     protected String surname;
     protected int tickets;
-    private String text;
+    protected String text;
 
     public Person(String name, String surname, int tickets) {
         this.name = name;
@@ -10,7 +10,7 @@ class Person {
         this.tickets = tickets;
     }
 
-    String message() {
+    public String message() {
         text = name + " " + surname + " прокатился на аттракционе";
         return text;
     }
